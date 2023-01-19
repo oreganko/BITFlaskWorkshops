@@ -17,3 +17,6 @@ build/
 .idea/
 docs/_build/
 .vscode
+/migrations/script.py.mako
+/migrations/alembic.ini
+/migrations/versions/
