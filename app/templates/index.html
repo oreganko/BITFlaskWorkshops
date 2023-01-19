@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }} - Super App</title>
+    Should I wish you a <a href="/name/{{user.username}}"> good day</a>?
+</head>
+<body>
+    <h1>Hello, {{user.username}}!</h1>
+    <h2>How about watching {{user.movie}}?</h2>
+    {% for elem in user.movies %}
+    {{elem}}{% if not loop.last %}, {% endif %}
+    {% endfor %}.
+</body>
+</html>
